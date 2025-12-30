@@ -54,7 +54,6 @@ sudo apt-get update
 sudo apt-get upgrade
 sudo apt-get install cmake wget curl build-essential
 ```
-------------
 
 ### Clone the repo.
 ```bash
@@ -75,7 +74,7 @@ OpenCV installed successfully
 ```
 
 
-#### Copy RKLLM, RKNN
+### Copy RKLLM, RKNN
 To run SmolVLM2-2B, you need to have the **rkllm-runtime** library version **1.2.2** (or higher) installed, as well as the **rknpu driver** version **0.9.8**.<br>
 If you don't have these on your machine, or if you have a lower version, you need to install them.<br>
 We have provided the correct versions in the repo.<br>
@@ -83,13 +82,13 @@ We have provided the correct versions in the repo.<br>
 sudo cp aarch64/library/*.so /usr/local/lib
 sudo cp aarch64/include/*.h /usr/local/include
 ```
-#### Download the LLM and VLM model.
+### Download the LLM and VLM model.
 The next step is downloading the models.<br>
 Download the two files (1.5 GB) from my Vietnodes.com server:<br>
 <br> Copy both to your `./model` folder.
 
 
-#### Building the app.
+### Building the app.
 ```
 mkdir build && cd build
 cmake ..
@@ -121,9 +120,6 @@ VLM_NPU ./Moon.jpg ./models/smolvlm2-2.2b-instruct_w8a8_rk3588.rknn ./models/smo
 The NewTokens (2048) and ContextLength (4096) are optional and can be omitted.
 
 ### Using the app.
-Using the application is simple. Once you provide the image and the models, you can ask everything you want.<br>
-Remember, we are on a bare Rock5C, so don't expect the same quality answers as ChatGPT can provide.<br>
-On the other hand, when you see the examples below, the app performs amazingly well.<br><br>
 If you want to talk about the picture, you need to include the token `<image>` in your prompt once.<br>
 The app remembers the dialogue until you give the token `<clear>`.<br>
 With `<exit>`, you leave the application.
