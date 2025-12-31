@@ -77,7 +77,7 @@ OpenCV installed successfully
 
 
 ### Copy RKLLM, RKNN
-To run SmolVLM2-2B, you need to have the **rkllm-runtime** library version **1.2.2** (or higher) installed, as well as the **rknpu driver** version **0.9.8**.<br>
+To run SmolVLM2-2B, you need to have the **rkllm-runtime** library version **1.2.2** (or higher) installed, as well as the **rknpu driver** version **0.9.6**.<br>
 If you don't have these on your machine, or if you have a lower version, you need to install them.<br>
 We have provided the correct versions in the repo.<br>
 ```bash

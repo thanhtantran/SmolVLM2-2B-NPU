@@ -69,7 +69,7 @@ python3 -c "import cv2; print('OpenCV installed successfully'); print(cv2.__vers
 ```
 
 ### Cài đặt RKLLM và RKNN
-Để chạy SmolVLM2-2B, bạn cần **rkllm-runtime >= 1.2.2** và **rknpu driver >= 0.9.8**.  
+Để chạy SmolVLM2-2B, bạn cần **rkllm-runtime >= 1.2.2** và **rknpu driver >= 0.9.6**.  
 Các phiên bản phù hợp đã được cung cấp sẵn trong repo.
 
 ```bash
