@@ -83,9 +83,10 @@ sudo cp aarch64/library/*.so /usr/local/lib
 sudo cp aarch64/include/*.h /usr/local/include
 ```
 ### Download the LLM and VLM model.
-The next step is downloading the models.<br>
-Download the two files (1.5 GB) from my Vietnodes.com server:<br>
-<br> Copy both to your `./model` folder.
+Download the two needed files (2.7 GB) from our Vietnodes.com server:<br>
+[smolvlm2-2.2b_vision_fp16_rk3588.rknn](https://vietnodes.com/wl/?id=YR9v0XYxJF0NtQIb4BxA3zpEsTuoNOwM)
+[smolvlm2-2.2b-instruct_w8a8_rk3588.rkllm](https://vietnodes.com/wl/?id=vDhnZui1LMVuBQ5fAxdxRgRuMGAgsphK)
+Copy both into `/models` folder.
 
 
 ### Building the app.
