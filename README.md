@@ -105,7 +105,9 @@ Ví dụ:
 - `<clear>` để xóa hội thoại  
 - `<exit>` để thoát chương trình  
 
-------------
+### Video hướng dẫn
+
+https://www.youtube.com/watch?v=AFHFgLPvIe0
 
 ## Credit
 - Mã nguồn gốc: https://github.com/Qengineering/SmolVLM2-2B-NPU
