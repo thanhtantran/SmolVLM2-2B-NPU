@@ -107,5 +107,5 @@ Ví dụ:
 
 ------------
 
-## Ghi công
+## Credit
 - Mã nguồn gốc: https://github.com/Qengineering/SmolVLM2-2B-NPU
