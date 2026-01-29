@@ -9,17 +9,13 @@ Hugging Face: https://huggingface.co/blog/smolvlm2
 
 ## Giới thiệu
 
-LLM (Large Language Models – Mô hình ngôn ngữ lớn) là các mạng nơ-ron được huấn luyện trên tập dữ liệu văn bản khổng lồ nhằm hiểu và sinh ngôn ngữ.  
-VLM (Vision-Language Models – Mô hình thị giác–ngôn ngữ) tích hợp thêm bộ mã hóa hình ảnh, cho phép mô hình xử lý đồng thời cả hình ảnh và văn bản.  
-Hệ thống kết hợp VLM + LLM thường được gọi là mô hình đa phương thức (multimodal).
+LLM (Large Language Models – Mô hình ngôn ngữ lớn) là các mạng nơ-ron được huấn luyện trên tập dữ liệu văn bản khổng lồ nhằm hiểu và sinh ngôn ngữ.
+VLM (Vision-Language Models – Mô hình thị giác–ngôn ngữ) tích hợp thêm bộ mã hóa hình ảnh, cho phép mô hình xử lý đồng thời cả hình ảnh và văn bản.
+Hệ thống kết hợp VLM + LLM thường được gọi là mô hình đa phương thức (multimodal model)
 
-Các mô hình này có thể rất lớn — từ hàng trăm triệu đến hàng tỷ tham số — ảnh hưởng trực tiếp đến độ chính xác, mức sử dụng bộ nhớ và tốc độ chạy.  
-Trên các thiết bị edge như RK3588, tài nguyên RAM và khả năng tính toán bị giới hạn, và ngay cả NPU cũng có các ràng buộc nghiêm ngặt về các phép toán được hỗ trợ.  
-Vì vậy, mô hình thường cần được lượng tử hóa hoặc tinh giản để có thể chạy được.
+Các mô hình này có thể rất lớn — từ hàng trăm triệu đến hàng tỷ tham số — ảnh hưởng trực tiếp đến độ chính xác, mức sử dụng bộ nhớ và tốc độ chạy. Chúng ta sẽ thường thấy các mô hình này chạy trên các máy chủ lớn với card màn hình giá trị cao, nhiều khi đầu tư cả hệ thống lên tới hàng chục triệu thậm chí hàng trăm triệu. Trên các thiết bị edge như Orange Pi sử dụng RK3588, tài nguyên RAM và khả năng tính toán bị giới hạn, và ngay cả NPU cũng có các ràng buộc nghiêm ngặt về các phép toán được hỗ trợ. Vì vậy, mô hình thường cần được lượng tử hóa hoặc tinh giản để có thể chạy được.
 
-Hiệu năng thường được đo bằng số token (từ) trên giây.  
-Sau khi chuyển đổi sang RKNN, một phần mô hình có thể chạy trên NPU, giúp tăng tốc đáng kể.  
-Mặc dù có các giới hạn này, những mô hình như SmolVLM2-2.2B vẫn chạy tốt trên RK3588 nhờ NPU tăng tốc hiệu quả các phép toán nặng và bộ mã hóa thị giác có thể được tối ưu. Điều này giúp AI đa phương thức tiên tiến có thể triển khai trên các thiết bị nhỏ gọn, tiết kiệm điện năng.
+Mô hình SmolVLM2 này là một ví dụ của việc lượng tử hóa hoặc tinh giản tối đa để chạy trên các thiết bị edge device. Sau khi chuyển đổi sang định dạng RKNN, một phần mô hình có thể chạy trên NPU, giúp tăng tốc đáng kể. Sau khi loại bỏ các giới hạn này, những mô hình như SmolVLM2-2.2B vẫn chạy tốt trên RK3588 nhờ NPU tăng tốc hiệu quả các phép toán nặng và bộ mã hóa thị giác có thể được tối ưu. Điều này giúp AI đa phương thức tiên tiến có thể triển khai trên các thiết bị nhỏ gọn, tiết kiệm điện năng.
 
 ------------
 
